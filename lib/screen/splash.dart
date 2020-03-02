@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _executeAfterBuild(BuildContext context) {
     new Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, AppConstants.route_login);
+      Navigator.pushReplacementNamed(context, AppConstants.route_intro);
     });
   }
 }

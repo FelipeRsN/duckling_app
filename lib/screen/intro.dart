@@ -169,7 +169,9 @@ class _IntroScreenState extends State<IntroScreen> {
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(4.0)),
                         child: Text("Entrar"),
-                        onPressed: () => {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, AppConstants.route_login);
+                        },
                       ),
                     ),
                   ),
@@ -188,8 +190,7 @@ class _IntroScreenState extends State<IntroScreen> {
                             borderRadius: new BorderRadius.circular(4.0)),
                         child: Text("Cadastrar"),
                         onPressed: () {
-                          Navigator.pushReplacementNamed(
-                              context, AppConstants.route_register);
+                          Navigator.pushNamed(context, AppConstants.route_register);
                         },
                       ),
                     ),
@@ -222,7 +223,7 @@ class _IntroScreenState extends State<IntroScreen> {
         ),
         child: Image.asset(
           item['image'],
-          fit: BoxFit.fitHeight,
+          fit: BoxFit.cover,
         ),
       ),
     );

@@ -7,4 +7,7 @@ class AppColors{
   static const colorInvalid = Color(0xffCCCCCC);
   static const colorText = Color(0xff797979);
   static const colorBackground = Color(0xffFAFAFA);
+
+  static const colorFacebook = Color(0xff3b5999);
+  static const colorGoogle = Color(0xffdd4b39);
 }
