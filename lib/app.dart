@@ -1,3 +1,4 @@
+import 'package:duckling/screen/home.dart';
 import 'package:duckling/screen/intro.dart';
 import 'package:duckling/screen/login.dart';
 import 'package:duckling/screen/register.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         AppConstants.route_intro: (BuildContext context) => IntroScreen(),
         AppConstants.route_register: (BuildContext context) => RegisterScreen(),
         AppConstants.route_login: (BuildContext context) => LoginScreen(),
+        AppConstants.route_home: (BuildContext context) => HomeScreen(),
       },
     );
   }

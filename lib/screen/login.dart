@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../res/app_colors.dart';
-import '../res/app_colors.dart';
-import '../res/app_colors.dart';
-import '../res/app_colors.dart';
-import '../res/app_colors.dart';
+import '../utils/constants.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -176,7 +173,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(4.0)),
                         child: Text("ENTRAR"),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(context, AppConstants.route_home);
+                        },
                       ),
                     ),
                   ],
@@ -190,7 +189,9 @@ class _LoginScreenState extends State<LoginScreen> {
               width: double.infinity,
               height: 36,
               child: RaisedButton(
-                onPressed: () => {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, AppConstants.route_register);
+                },
                 elevation: 0,
                 color: AppColors.colorAccent,
                 child: Text(

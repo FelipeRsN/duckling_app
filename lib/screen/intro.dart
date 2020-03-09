@@ -84,6 +84,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 page = pageController.page;
               });
             }
+            return true;
           },
           child: PageIndicatorContainer(
             length: listOfItem.length,
